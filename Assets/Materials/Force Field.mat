@@ -30,7 +30,7 @@ Material:
     - Vector1_A6BF40B3: 0.03
     - Vector1_AA8DA997: 0
     - Vector1_C70156C0: 0.5
-    - _ShieldHP: 0
+    - _ShieldHP: 1
     m_Colors:
     - Color_639B1E41: {r: 0.5324098, g: 1.4197595, b: 8.47419, a: 0}
     - Color_F0E80824: {r: 10.07142, g: 0.3549399, b: 0.3549399, a: 1}
