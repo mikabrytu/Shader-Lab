@@ -17,15 +17,12 @@ namespace Mikabrytu.ShaderLab
         private void Start()
         {
             healthSystem = new ForceFieldHealthSystem();
-            healthSystem.Setup(maxHealth);
-
-            material = GetComponent<Renderer>().material;
+            healthSystem.Setup(maxHealth, GetComponent<Renderer>().material);
         }
 
         public void DamageForceField()
         {
             healthSystem.Damage(damage);
-            SetForceFieldColor();
 
             if (healthSystem.IsDead())
             {
@@ -37,13 +34,7 @@ namespace Mikabrytu.ShaderLab
         private void RestartShield()
         {
             healthSystem.Reset();
-            SetForceFieldColor();
             gameObject.SetActive(true);
-        }
-
-        private void SetForceFieldColor()
-        {
-            material.SetFloat("_ShieldHP", healthSystem.GetHealth());
         }
     }
 }

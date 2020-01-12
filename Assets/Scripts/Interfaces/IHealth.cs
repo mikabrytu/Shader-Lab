@@ -6,7 +6,7 @@ namespace Mikabrytu.ShaderLab
 {
     public interface IHealth
     {
-        void Setup(float maxHealth);
+        void Setup(float maxHealth, Material material);
         void Reset();
         void Damage(float damage);
         float GetHealth();
