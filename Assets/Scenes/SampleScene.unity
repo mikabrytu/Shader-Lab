@@ -1348,8 +1348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e1e3b7012e64f5ab6404c55f69cdf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  damage: 0.1
+  maxHealth: 10
+  damage: 1
   respawnTime: 2
 --- !u!1 &2138677391
 GameObject:

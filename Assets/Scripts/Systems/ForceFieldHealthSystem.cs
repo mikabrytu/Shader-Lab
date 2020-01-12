@@ -37,7 +37,7 @@ namespace Mikabrytu.ShaderLab
 
         public bool IsDead()
         {
-            return currentHealth <= 0;
+            return currentHealth < 0;
         }
 
         private void SetMaterialColor()
